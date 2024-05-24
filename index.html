@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">  
+</head>
+<body>
+
+  <nav>
+    <i>Clientes</i>
+  </nav>
+
+  <div class="buscador">
+    <input id="textoBuscador" type="text" placeholder="Introduzca nombre">
+    &nbsp;
+    &nbsp;
+
+    <img id="plus" src="Plus.gif">
+  </div>
+
+  <div class="main"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="main.js"></script>
+  
+
+
+  <div id="modalForm" class="modal">
+    <div class="modalContenido">
+      <span class="cerrarForm">&times;</span>
+      <form id="formulario">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="desc">Descripcion:</label><br>
+        <input type="text" id="desc" name="desc"><br>
+        <label for="foto">Foto (1-11):</label><br>
+        <input type="text" id="foto" name="foto"><br>
+        <div class=listaFotos>
+          <img src="1.png" title="1"><img src="2.png" title="2"><img src="3.png" title="3"><img src="4.png" title="4"><img src="5.png" title="5"><img src="6.png" title="6">
+          <img src="7.png" title="7"><img src="8.png" title="8"><img src="9.png" title="9"><img src="10.png" title="10"><img src="11.png" title="11">
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
